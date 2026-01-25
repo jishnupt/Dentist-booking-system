@@ -1,0 +1,129 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 40px;
+    background: linear-gradient(to right, #eaf7f6, #ffffff);
+}
+
+.hero_text {
+    max-width: 500px;
+}
+
+.hero_text h1 {
+    font-size: 42px;
+    color: #0a4d68;
+    margin-bottom: 15px;
+}
+
+.hero_text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn_primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1bb6a3;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.btn_primary:hover {
+    background-color: #159a8a;
+}
+
+.hero_image img {
+    max-width: 420px;
+    width: 100%;
+}
+
+.services {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    color: #0a4d68;
+    margin-bottom: 40px;
+}
+
+.service_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 30px 20px;
+    background-color: #f5f9fc;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #1bb6a3;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    font-size: 15px;
+}
+
+.cta {
+    padding: 60px 20px;
+    background-color: #0a4d68;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cta h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.btn_secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1bb6a3;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.btn_secondary:hover {
+    background-color: #159a8a;
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero_text h1 {
+        font-size: 32px;
+    }
+
+    .service_cards {
+        grid-template-columns: 1fr;
+    }
+}
