@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.register_user_main {
+    min-height: 70vh;
+    /* background: linear-gradient(135deg, #eff4f6, #4db8ff); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.reg_card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.reg_card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg_card form input,
+.reg_card form select,
+.reg_card form textarea {
+    width: 100%;
+    padding: 5px 8px;
+    margin-bottom: 1px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.reg_card form input:focus,
+.reg_card form select:focus,
+.reg_card form textarea:focus {
+    border-color: #0a4f7a;
+    box-shadow: 0 0 0 2px rgba(10, 79, 122, 0.15);
+}
+
+.reg_card form input[type="submit"] {
+    background: #0a4f7a;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.reg_card form input[type="submit"]:hover {
+    background: #063654;
+}
+
+.reg_card label {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.errorlist {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+    color: #d32f2f;
+    font-size: 13px;
+}
+
+.helptext {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    .reg_card {
+        padding: 25px 20px;
+    }
+}
