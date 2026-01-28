@@ -14,7 +14,15 @@
                 <img src="/static/images/teeth logo.png" alt="" width="60px" height="50px">
             </div>
             <div class="right_menu">
+                {% if user.is_authenticated %}
+                {{request.user}}
+                <a href="{% url 'logout' %}"><p>Logout</p></a>
+                {% endif %}
+                {% if user.is_authenticated and user.role == 'doctor' %}
+                <a href="{% url 'Dr_notifi' %}"><p>Notification</p></a>
+                {% endif %}
                 <a href="{% url 'homepage' %}"><p>Home</p></a>
+                <a href="{% url 'Login_page' %}"><p>Login</p></a>
                 <a href="{% url 'services_page' %}"><p>Services</p></a>
                 <a href="{% url 'RegisterUser' %}"><p>Register</p></a>
             </div>

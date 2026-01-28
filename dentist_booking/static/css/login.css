@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.login_main {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login_card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.login_card form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login_card input[type="text"],
+.login_card input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.login_card input::placeholder {
+    color: #999;
+}
+
+.login_card input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 0 2px rgba(79, 172, 254, 0.2);
+}
+
+.login_card input[type="submit"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login_card input[type="submit"]:hover {
+    background: linear-gradient(135deg, #00c6ff, #4facfe);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .login_card {
+        padding: 25px 18px;
+    }
+
+    .login_card input[type="submit"] {
+        font-size: 15px;
+    }
+}

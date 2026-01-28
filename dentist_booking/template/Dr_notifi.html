@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{%block contents%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/DR_notifi.css">
+</head>
+<body>
+    <h2>Appointments</h2>
+    <div class="DR_notifi_main">
+        <div class="DR_notifi_card">
+            {% for i in Bookings %}
+            <h3>{{i.userr}}</h3>
+            <p>{{i.note}}</p>
+            <p>{{i.booking_date}}</p>
+            <a href=""><button>Accept</button></a>
+            <a href=""><button>Reject</button></a>
+            {% endfor %}
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
+{%endblock%}

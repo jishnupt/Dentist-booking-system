@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{%block contents%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <div class="login_main">
+        <div class="login_card">
+            <form method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="username" name="user">
+        <input type="password" placeholder="password" name="pass">
+        <input type="submit" value="LOGIN">    
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+{%endblock%}

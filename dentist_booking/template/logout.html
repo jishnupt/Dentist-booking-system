@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{%block contents%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/logout.css">
+</head>
+<body>
+    <div class="logout_main">
+        <div class="logout_card">
+    <p>Are You Sure Want to LOGOUT?</p>
+    <form method="post">
+    {% csrf_token %}
+    <input type="submit" value="YES">
+    </form>
+    <a href="{% url 'homepage' %}"><button>NO</button></a>
+        </div>
+    </div>
+    
+</body>
+</html>
+{%endblock%}

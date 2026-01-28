@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    min-height: 100vh;
+}
+
+.booking_main {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.booking_card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.booking_card form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.booking_card input,
+.booking_card select,
+.booking_card textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.booking_card input:focus,
+.booking_card select:focus,
+.booking_card textarea:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
+}
+
+.booking_card textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.booking_card input[type="submit"] {
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking_card input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(2, 132, 199, 0.35);
+}
+
+.booking_card input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.errorlist {
+    list-style: none;
+    color: #dc2626;
+    font-size: 13px;
+    margin-bottom: -6px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .booking_card {
+        padding: 24px 18px;
+    }
+
+    .booking_card input[type="submit"] {
+        font-size: 15px;
+    }
+}
