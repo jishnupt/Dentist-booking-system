@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+{%block contents%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/css/contact.css">
+</head>
+<body>
+
+<div class="contact_main">
+    <div class="contact_card">
+
+        <h2>Contact DentaCare</h2>
+        <p class="contact_subtitle">
+            We’re here to help you smile better   
+            Reach us anytime for appointments or queries.
+        </p>
+
+        <div class="contact_info">
+            <div class="info_box">
+                <span>📞</span>
+                <div>
+                    <h4>Mobile</h4>
+                    <p>7510747057</p>
+                </div>
+            </div>
+
+            <div class="info_box">
+                <span>📧</span>
+                <div>
+                    <h4>Email</h4>
+                    <p>dentacare@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact_form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Mobile Number" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+{%endblock%}
